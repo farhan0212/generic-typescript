@@ -16,4 +16,10 @@ describe("Multiple Generic Function", () => {
     expect(value.second).toBe(24);
     expect(value.third).toBe(true);
   });
+
+  it("should be able to optional", () => {
+    const value = new Multiple("farhan", 24);
+    expect(value.key).toBe("farhan");
+    expect(value.value).toBe(24);
+  });
 });
